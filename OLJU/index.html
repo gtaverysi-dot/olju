@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlineJobs University · Build a Stronger Online Career</title>
+  <meta name="description" content="World-class online work education for Filipino workers, built by OnlineJobs.ph. Educate. Elevate. Earn.">
+  <meta name="theme-color" content="#1A2759">
+  <link rel="icon" type="image/png" href="assets/img/badge.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <!-- Phosphor icon sprite (@phosphor-icons/core 2.1.1) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow-right" viewBox="0 0 256 256"><path fill="currentColor" d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 256 256"><path fill="currentColor" d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"/></symbol>
+    <symbol id="i-trend-up" viewBox="0 0 256 256"><path fill="currentColor" d="M240,56v64a8,8,0,0,1-16,0V75.31l-82.34,82.35a8,8,0,0,1-11.32,0L96,123.31,29.66,189.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0L136,140.69,212.69,64H168a8,8,0,0,1,0-16h64A8,8,0,0,1,240,56Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 256 256"><path fill="currentColor" d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 256 256"><path fill="currentColor" d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 256 256"><path fill="currentColor" d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 256 256"><path fill="currentColor" d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ───────────── Nav ───────────── -->
+  <header class="nav" data-nav>
+    <nav class="nav__bar" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="OnlineJobs University home">
+        <img src="assets/img/logo.png" alt="" width="96" height="32">
+      </a>
+      <ul class="nav__links" data-nav-links>
+        <li><a href="#top" class="is-current" aria-current="true" data-spy="top">Home</a></li>
+        <li><a href="#how-it-works" data-spy="how-it-works">How it works</a></li>
+        <li><a href="#courses" data-spy="courses">Courses</a></li>
+        <li><a href="#instructors" data-spy="instructors">Instructors</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="nav__signin" href="#">Sign in</a>
+        <a class="btn btn--primary btn--sm" href="#">Register</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Open menu" data-nav-toggle>
+          <svg class="icon" aria-hidden="true"><use href="#i-list"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__sheet" id="nav-sheet" data-nav-sheet hidden>
+      <a href="#top">Home</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#courses">Courses</a>
+      <a href="#instructors">Instructors</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#">Sign in</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── Hero ───────────── -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title reveal" id="hero-title">Think Beyond Tasks. <span class="nowrap hero__title-accent">Deliver Better Work.</span> Build a Stronger Online Career.</h1>
+          <p class="hero__sub reveal">World-class online work education for Filipino workers, built by OnlineJobs.ph.</p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary btn--lg btn--lift" href="#courses">
+              Start learning today
+              <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--outline btn--lg" href="#courses">Explore All Courses</a>
+          </div>
+          <div class="hero__proof reveal">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="assets/img/avatars/maria-reyes.jpg" alt="" width="32" height="32">
+              <img src="assets/img/avatars/carlo-dizon.jpg" alt="" width="32" height="32">
+              <img src="assets/img/avatars/pia-gomez.jpg" alt="" width="32" height="32">
+              <img src="assets/img/avatars/avatar-4.jpg" alt="" width="32" height="32">
+              <img src="assets/img/avatars/sofia-cruz.jpg" alt="" width="32" height="32">
+            </div>
+            <p>9 practitioner instructors · 5M+ workers on OnlineJobs.ph</p>
+          </div>
+        </div>
+        <figure class="hero__visual reveal">
+          <img src="assets/img/hero.jpg" alt="A Filipino online worker taking notes at her desk beside a laptop" width="496" height="560" fetchpriority="high">
+          <figcaption class="hero__chip">
+            <img src="assets/img/badge.png" alt="" width="40" height="40">
+            <span>
+              <strong>Course badge earned</strong>
+              <small>Visible on your OnlineJobs.ph profile</small>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────────── Mission ───────────── -->
+    <section class="mission" aria-labelledby="mission-title">
+      <div class="container mission__grid">
+        <div class="mission__copy">
+          <p class="overline">Educate. Elevate. Earn.</p>
+          <h2 class="mission__title" id="mission-title">OnlineJobs.ph already helps Filipino workers connect with employers looking for online talent.</h2>
+          <p class="mission__lead">OnlineJobs University adds world-class education to that connection, helping workers develop the thinking, confidence, and problem-solving ability that stronger online careers are built on.</p>
+          <div class="contrast-card">
+            <p class="contrast-card__label">What a lot of online courses teach</p>
+            <ul class="contrast-card__chips">
+              <li>“click here”</li>
+              <li>“open this tool”</li>
+              <li>“follow this template”</li>
+            </ul>
+            <p class="contrast-card__note">Task mechanics. That can be useful, but it is not enough.</p>
+            <hr>
+            <p class="contrast-card__quote">Building a stronger online career takes more than knowing which buttons to click.</p>
+          </div>
+          <p class="mission__body">If you want to do better work, solve real employer problems, and move toward better online opportunities, you need education that goes beyond task completion.</p>
+        </div>
+
+        <div class="map" data-map aria-hidden="true">
+          <div class="map__land"></div>
+          <span class="map__pin" style="--x:20.89%;--y:29.09%;--s:20.26%;--bs:227.27% 127.84%;--bp:4.69% 11.66%;--d:0ms;background-image:url(assets/img/map-1.jpg)"></span>
+          <span class="map__pin" style="--x:48.06%;--y:14.70%;--s:17.12%;--bs:177.78% 100%;--bp:76.57% 0%;--d:90ms;background-image:url(assets/img/map-2.jpg)"></span>
+          <span class="map__pin" style="--x:74.13%;--y:34.02%;--s:25.60%;--bs:304.66% 171.37%;--bp:85.3% 15.18%;--d:180ms;background-image:url(assets/img/map-3.jpg)"></span>
+          <span class="map__pin" style="--x:46.80%;--y:53.14%;--s:23.09%;--bs:258.06% 145.16%;--bp:98.82% 1.46%;--d:270ms;background-image:url(assets/img/map-6.jpg)"></span>
+          <span class="map__pin" style="--x:14.92%;--y:64.65%;--s:11.94%;--bs:348.38% 196.09%;--bp:88.48% 5.32%;--d:360ms;background-image:url(assets/img/map-5.jpg)"></span>
+          <span class="map__pin" style="--x:75.39%;--y:76.99%;--s:16.49%;--bs:285.2% 160.43%;--bp:85.88% 0%;--d:450ms;background-image:url(assets/img/map-4.jpg)"></span>
+          <div class="map__chip">
+            <svg viewBox="0 0 32 32" width="32" height="32">
+              <path transform="translate(3.5 6.5)" d="M22 11c0 6.075-4.925 11-11 11S0 17.075 0 11 4.925 0 11 0s11 4.925 11 11Z" fill="#DDE2EF"/>
+              <path transform="translate(10 6.5)" d="M9 11c0 6.075-2.015 11-4.5 11S0 17.075 0 11 2.015 0 4.5 0 9 4.925 9 11Z" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+              <path transform="translate(3.5 12)" d="M0 5.5h22M1.75 0h18.5M1.75 11h18.5" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+              <path transform="translate(9 11)" d="M0 11C1 5 6 1 12 0" fill="none" stroke="#1A2759" stroke-width="3.2" stroke-linecap="round"/>
+              <circle cx="9" cy="22" r="2.5" fill="#1A2759"/>
+              <g transform="translate(19 1.5)">
+                <path d="M5 0C2.25 0 0 2.15 0 4.9 0 8.4 5 12.5 5 12.5s5-4.1 5-7.6C10 2.15 7.75 0 5 0Z" fill="#1A2759"/>
+                <path d="M5 0C2.25 0 0 2.15 0 4.9 0 8.4 5 12.5 5 12.5s5-4.1 5-7.6C10 2.15 7.75 0 5 0Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+              </g>
+              <circle cx="24" cy="6.3" r="1.8" fill="#FFFFFF"/>
+            </svg>
+            <span><strong>Employers worldwide</strong><small>looking for online talent</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Educate · Elevate · Earn (scroll-driven) ───────────── -->
+    <section class="pillars" aria-labelledby="pillars-title" data-pillars data-step="0" style="--step:0">
+      <div class="pillars__sticky">
+        <div class="pillars__inner">
+          <header class="pillars__header">
+            <p class="pillars__lead">That’s why OnlineJobs University is built around a bigger career mission:</p>
+            <h2 class="pillars__title" id="pillars-title">
+              <span class="pillars__word is-active" data-word>Educate.</span>
+              <span class="pillars__word" data-word>Elevate.</span>
+              <span class="pillars__word" data-word>Earn.</span>
+            </h2>
+            <div class="pillars__progress" aria-hidden="true">
+              <span data-seg></span><span data-seg></span><span data-seg></span>
+            </div>
+          </header>
+
+          <div class="pillars__stairs" data-stairs>
+            <div class="pillar is-active" data-pillar style="--i:0">
+              <article class="pillar__card" aria-current="step">
+                <div class="pv pv--educate" aria-hidden="true">
+                  <div class="pv-educate__row">
+                    <div class="pv-educate__screen"><svg class="icon"><use href="#i-play"/></svg></div>
+                    <div class="pv-educate__lines"><i></i><i></i><i></i><i></i></div>
+                  </div>
+                  <div class="pv-educate__track"><i></i></div>
+                </div>
+                <h3 class="pillar__title">Educate</h3>
+                <p class="pillar__body">Move beyond task-based training. Learn what it takes to deliver better online work, not just how to click buttons, open tools, or follow templates.</p>
+              </article>
+              <div class="pillar__base" aria-hidden="true"></div>
+            </div>
+
+            <div class="pillar" data-pillar style="--i:1">
+              <article class="pillar__card">
+                <div class="pv pv--elevate" aria-hidden="true">
+                  <div class="pv-elevate__ticks"><i></i><i></i><i></i></div>
+                  <div class="pv-elevate__row">
+                    <div class="pv-elevate__avatar">
+                      <svg viewBox="0 0 56 56" width="26" height="26"><circle cx="28" cy="22" r="11"/><path d="M6 56C6 42 16 35 28 35C40 35 50 42 50 56Z"/></svg>
+                    </div>
+                    <div class="pv-elevate__bars"><i></i><i></i></div>
+                    <div class="pv-elevate__slot"></div>
+                  </div>
+                  <div class="pv-elevate__shield">
+                    <svg viewBox="0 0 64 64" width="48" height="48">
+                      <path d="M21 42L15 59L21 56L24 61L30 48Z" fill="#8793C2"/>
+                      <path d="M43 42L49 59L43 56L40 61L34 48Z" fill="#8793C2"/>
+                      <path d="M32 4L51 10.5V27C51 40 43 49 32 55C21 49 13 40 13 27V10.5Z" fill="#1A2759"/>
+                      <path d="M32 4L13 10.5V27C13 40 21 49 32 55Z" fill="#23326C"/>
+                      <path d="M25 18V28C25 32 28 35 32 35C36 35 39 32 39 28V18" fill="none" stroke="#F9B42A" stroke-width="4.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="pillar__title">Elevate</h3>
+                <p class="pillar__body">Get better at how you think, solve problems, and approach the work employers actually need done. When you complete badge-eligible training, a course badge appears on your OnlineJobs.ph profile to make your progress visible to employers.</p>
+              </article>
+              <div class="pillar__base" aria-hidden="true"></div>
+            </div>
+
+            <div class="pillar" data-pillar style="--i:2">
+              <article class="pillar__card">
+                <div class="pv pv--earn" aria-hidden="true">
+                  <i class="pv-earn__bar"></i><i class="pv-earn__bar"></i><i class="pv-earn__bar"></i><i class="pv-earn__bar"></i>
+                  <svg class="icon pv-earn__trend"><use href="#i-trend-up"/></svg>
+                </div>
+                <h3 class="pillar__title">Earn</h3>
+                <p class="pillar__body">See what is possible for your online career. Become more competitive for online roles that can move your career and income forward.</p>
+              </article>
+              <div class="pillar__base" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── How it works ───────────── -->
+    <section class="how section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="how__title" id="how-title">How OnlineJobs University Works</h2>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__visual step__visual--search" aria-hidden="true">
+              <div class="step__zoom">
+                <div class="search-ui">
+                  <div class="search-ui__field"><svg class="icon icon--16"><use href="#i-search"/></svg>bookkeeping</div>
+                  <div class="search-ui__item is-selected">
+                    <img src="assets/img/thumb-bookkeeping.jpg" alt="" width="44" height="44" loading="lazy">
+                    <span><strong>Bookkeeping &amp; Financial Reporting</strong><small><i style="--dot:#039855"></i>Finance · 14 hrs</small></span>
+                    <span class="search-ui__check"><svg class="icon"><use href="#i-check"/></svg></span>
+                  </div>
+                  <div class="search-ui__item">
+                    <img src="assets/img/thumb-executive-assistant.jpg" alt="" width="44" height="44" loading="lazy">
+                    <span><strong>Executive Assistant Mastery</strong><small><i style="--dot:#0E9384"></i>Administrative · 11 hrs</small></span>
+                  </div>
+                  <div class="search-ui__item">
+                    <img src="assets/img/thumb-google-ads.jpg" alt="" width="44" height="44" loading="lazy">
+                    <span><strong>Google Ads &amp; Analytics for VAs</strong><small><i style="--dot:#1570EF"></i>Technology · 9 hrs</small></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step__copy">
+              <span class="step__num">1</span>
+              <h3 class="step__title">Choose Your Course</h3>
+              <p>Browse OnlineJobs University’s courses and choose the training that fits the kind of online work you want to understand, improve, or grow into.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__visual step__visual--photo" aria-hidden="true">
+              <div class="step__zoom step__photo"><img src="assets/img/practice.jpg" alt="" width="600" height="600" loading="lazy"></div>
+              <div class="activity">
+                <p class="activity__head">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <rect x="3.75" y="3.375" width="16.5" height="18.75" rx="2.25" fill="#DDE2EF"/>
+                    <rect x="8.25" y="1.5" width="7.5" height="4.125" rx="1.5" fill="#1A2759"/>
+                    <circle cx="8.25" cy="10.125" r="2.063" fill="#1A2759"/>
+                    <path d="M7.275 10.125l.712.712 1.313-1.387" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="11.625" y="9.563" width="6" height="1.125" rx=".563" fill="#B5BFDB"/>
+                    <circle cx="8.25" cy="14.625" r="2.063" fill="#1A2759"/>
+                    <path d="M7.275 14.625l.712.713 1.313-1.388" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="11.625" y="14.063" width="4.5" height="1.125" rx=".563" fill="#B5BFDB"/>
+                    <circle cx="8.25" cy="19.125" r="2.063" fill="#B5BFDB"/>
+                    <rect x="11.625" y="18.563" width="5.25" height="1.125" rx=".563" fill="#B5BFDB"/>
+                  </svg>
+                  Practice activity
+                </p>
+                <p class="activity__item is-done"><span class="activity__box"><svg class="icon"><use href="#i-check"/></svg></span>Read the client brief</p>
+                <p class="activity__item is-done"><span class="activity__box"><svg class="icon"><use href="#i-check"/></svg></span>Draft the status update</p>
+                <p class="activity__item"><span class="activity__box"></span>Submit for feedback</p>
+              </div>
+            </div>
+            <div class="step__copy">
+              <span class="step__num">2</span>
+              <h3 class="step__title">Practice as You Learn</h3>
+              <p>Go beyond watching lessons. Work through lessons and activities designed to help you understand employer expectations, practice real work skills, and build confidence as you go.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__visual step__visual--profile" aria-hidden="true">
+              <div class="step__zoom step__space"><span class="step__glow"></span><span class="step__dots"></span></div>
+              <div class="profile-card">
+                <div class="profile-card__head">
+                  <span class="profile-card__avatar"></span>
+                  <span><strong>Your OnlineJobs.ph profile</strong><small>Virtual Assistant · Open to work</small></span>
+                </div>
+                <hr>
+                <p class="profile-card__label">OLJU course badges</p>
+                <span class="badge-chip"><img src="assets/img/badge.png" alt="" width="24" height="24" loading="lazy">Bookkeeping Fundamentals</span>
+                <span class="badge-chip"><img src="assets/img/badge.png" alt="" width="24" height="24" loading="lazy">Executive Assistant Mastery</span>
+              </div>
+              <img class="profile-seal" src="assets/img/badge.png" alt="" width="72" height="72" loading="lazy">
+            </div>
+            <div class="step__copy">
+              <span class="step__num">3</span>
+              <h3 class="step__title">Show Your Progress</h3>
+              <p>Show employers what you’ve learned, what you’ve practiced, and how you’ve improved. When you complete badge-eligible training, an OnlineJobs University course badge appears on your OnlineJobs.ph profile to make that progress easier to recognize.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── Courses ───────────── -->
+    <section class="courses section" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="section-head section-head--top">
+          <div>
+            <h2 class="h-display" id="courses-title">Featured Courses</h2>
+            <p class="section-head__lede">Explore practical courses designed to help you build relevant skills, understand what employers expect, and become more confident in your ability to do better online work.</p>
+          </div>
+          <a class="btn btn--outline btn--lg" href="#">
+            Browse all 5 courses
+            <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+        <ul class="course-grid">
+          <li>
+            <a class="course-card" href="#">
+              <div class="course-card__media"><img src="assets/img/course-foreign-boss.png" alt="" width="600" height="338" loading="lazy"></div>
+              <div class="course-card__body">
+                <h3 class="course-card__title">How to Work for a Foreign Boss: A Practical Guide for Filipino Online Workers</h3>
+                <p class="course-card__price">Free Course</p>
+                <p class="course-card__desc">Learn how to work more confidently with foreign employers. Understand contracts, communicate clearly, handle feedback, and develop the professional habits that help build trust and stronger working relationships.</p>
+                <span class="course-card__cta">View Course <svg class="icon icon--16" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="course-card" href="#">
+              <div class="course-card__media"><img src="assets/img/course-va.png" alt="" width="600" height="339" loading="lazy"></div>
+              <div class="course-card__body">
+                <h3 class="course-card__title">Fundamentals for General Virtual Assistants</h3>
+                <p class="course-card__price">Free Course</p>
+                <p class="course-card__desc">Explore the tasks you may encounter as a general virtual assistant and the skills needed to get started in the role.</p>
+                <span class="course-card__cta">View Course <svg class="icon icon--16" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <article class="course-card course-card--soon">
+              <div class="course-card__media course-cover" aria-hidden="true">
+                <span class="course-cover__chip">Coming soon</span>
+                <p class="course-cover__title">Practical AI<br>Implementation</p>
+                <p class="course-cover__sub">for the Real World</p>
+                <img class="course-cover__badge" src="assets/img/badge.png" alt="" width="36" height="36">
+              </div>
+              <div class="course-card__body">
+                <h3 class="course-card__title">Practical AI Implementation for the Real World</h3>
+                <p class="course-card__price course-card__price--tba">Course Price — TBA</p>
+                <p class="course-card__desc">Go beyond experimenting with AI tools. Learn how to put AI to work on real tasks, solve problems more effectively, and use it to support your work without replacing your own thinking.</p>
+                <button class="course-card__cta" type="button" disabled>View Course <svg class="icon icon--16" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── Featured instructors ───────────── -->
+    <section class="instructors section" id="instructors" aria-labelledby="instructors-title">
+      <div class="container">
+        <div class="section-head section-head--top">
+          <div>
+            <h2 class="h-display" id="instructors-title">Featured Instructors</h2>
+            <p class="section-head__lede">There's a lot you can learn from people who've done the work themselves. Our instructors go beyond step-by-step instructions, sharing what they've learned on the job and how they approach challenges, solve problems, and do better work.</p>
+          </div>
+          <a class="btn btn--outline btn--lg" href="#">
+            Meet Our Instructors
+            <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+        <ul class="instructor-grid">
+          <li>
+            <a class="instructor" href="#">
+              <div class="instructor__media">
+                <img src="assets/img/maria-reyes.jpg" alt="Portrait of Maria Reyes" width="640" height="800" loading="lazy">
+                <span class="instructor__tag" style="--dot:#FD6F8E">Marketing</span>
+              </div>
+              <div class="instructor__body">
+                <h3 class="instructor__name">Maria Reyes</h3>
+                <p class="instructor__role">Digital Marketing &amp; CRM Administration</p>
+                <p class="instructor__bio">Eight years running email, social, and HubSpot pipelines for US e-commerce brands. Maria teaches the systems she wishes she'd had on day one.</p>
+                <span class="link-arrow link-arrow--lg">View Instructor Profile <svg class="icon icon--16" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="instructor" href="#">
+              <div class="instructor__media">
+                <img src="assets/img/carlo-dizon.jpg" alt="Portrait of Carlo Dizon" width="640" height="800" loading="lazy">
+                <span class="instructor__tag" style="--dot:#32D583">Finance</span>
+              </div>
+              <div class="instructor__body">
+                <h3 class="instructor__name">Carlo Dizon</h3>
+                <p class="instructor__role">Bookkeeping &amp; Financial Reporting</p>
+                <p class="instructor__bio">A CPA who left audit to keep the books for 30+ small businesses abroad. Carlo shows you how to close a clean month in QuickBooks and Xero.</p>
+                <span class="link-arrow link-arrow--lg">View Instructor Profile <svg class="icon icon--16" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="instructor" href="#">
+              <div class="instructor__media">
+                <img src="assets/img/pia-gomez.jpg" alt="Portrait of Pia Gomez" width="640" height="800" loading="lazy">
+                <span class="instructor__tag" style="--dot:#2ED3B7">Administrative</span>
+              </div>
+              <div class="instructor__body">
+                <h3 class="instructor__name">Pia Gomez</h3>
+                <p class="instructor__role">Executive Assistant Mastery</p>
+                <p class="instructor__bio">Pia has run calendars, inboxes, and travel for three startup founders. She teaches how to anticipate needs, communicate clearly, and earn trust fast.</p>
+                <span class="link-arrow link-arrow--lg">View Instructor Profile <svg class="icon icon--16" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── Final CTA · orbit shader ───────────── -->
+    <section class="cta" aria-labelledby="cta-title" data-cta>
+      <canvas class="cta__canvas" data-orbit aria-hidden="true"></canvas>
+      <div class="cta__badge" data-cta-badge aria-hidden="true">
+        <span class="cta__glow"></span>
+        <span class="cta__seal"><img src="assets/img/badge.png" alt="" width="116" height="116" loading="lazy"></span>
+      </div>
+      <div class="container cta__copy">
+        <h2 class="cta__title" id="cta-title">Better Online Opportunities Start with <span class="nowrap">Better Online Education</span></h2>
+        <p class="cta__sub">Education that goes beyond task completion.</p>
+        <p class="cta__body">Whether you’re applying for your first online job, trying to move into a better role, or looking for the right kind of learning to help you grow, OnlineJobs University gives you a practical place to start.</p>
+        <a class="btn btn--gold btn--lg btn--lift" href="#courses">
+          Start learning today
+          <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+        <p class="cta__faq">Have questions? <a href="faq.html">Read our FAQs.</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────── Footer ───────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/logo.png" alt="OnlineJobs University" width="120" height="40" loading="lazy">
+          <p>Online work education for Filipino workers,<br>built by OnlineJobs.ph.</p>
+        </div>
+        <nav class="footer__cols" aria-label="Footer">
+          <div>
+            <p class="footer__head">Learn</p>
+            <a href="#courses">All courses</a>
+            <a href="#instructors">Instructors</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div>
+            <p class="footer__head">Teach</p>
+            <a href="#">Be an instructor</a>
+          </div>
+          <div>
+            <p class="footer__head">Company</p>
+            <a href="#">Our why</a>
+            <a href="#">Contact</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 OnlineJobs University</p>
+        <p class="footer__motto">Educate. Elevate. Earn.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/orbit.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

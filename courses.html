@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Courses · OnlineJobs University</title>
+  <meta name="description" content="Browse OnlineJobs University courses for Filipino online workers.">
+  <meta name="theme-color" content="#1A2759">
+  <link rel="icon" type="image/png" href="assets/img/badge.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <!-- Phosphor icon sprite (@phosphor-icons/core 2.1.1) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-list" viewBox="0 0 256 256"><path fill="currentColor" d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 256 256"><path fill="currentColor" d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+    <symbol id="i-caret-down" viewBox="0 0 256 256"><path fill="currentColor" d="M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80a8 8 0 0 1 11.32-11.32L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ───────────── Nav ───────────── -->
+  <header class="nav" data-nav>
+    <nav class="nav__bar" aria-label="Primary">
+      <a class="nav__logo" href="index.html" aria-label="OnlineJobs University home">
+        <img src="assets/img/logo.png" alt="" width="96" height="32">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a class="is-current" href="courses.html" aria-current="page">Courses</a></li>
+        <li><a href="index.html#instructors">Instructors</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="nav__signin" href="#login" data-login-open>Sign in</a>
+        <a class="btn btn--primary btn--sm" href="#">Register</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Open menu" data-nav-toggle>
+          <svg class="icon" aria-hidden="true"><use href="#i-list"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__sheet" id="nav-sheet" data-nav-sheet hidden>
+      <a href="index.html">Home</a>
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="courses.html" aria-current="page">Courses</a>
+      <a href="index.html#instructors">Instructors</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#login" data-login-open>Sign in</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="catalog__head">
+          <h1 class="page-title reveal" id="catalog-title">All Courses</h1>
+          <div class="select">
+            <label class="sr-only" for="course-category">Filter by category</label>
+            <!-- Placeholder categories: replace with the real course categories -->
+            <select id="course-category" data-course-filter>
+              <option value="all">All Categories</option>
+              <option value="working-online">Working Online</option>
+              <option value="virtual-assistance">Virtual Assistance</option>
+              <option value="ai">AI &amp; Automation</option>
+            </select>
+            <svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg>
+          </div>
+        </header>
+        <p class="sr-only" aria-live="polite" data-course-count></p>
+
+        <ul class="catalog__grid">
+          <li data-category="working-online" data-reveal>
+            <article class="c-card c-card--link">
+              <div class="c-card__media"><img src="assets/img/course-foreign-boss.png" alt="" width="600" height="338"></div>
+              <div class="c-card__body">
+                <h2 class="c-card__title"><a href="course.html">How to Work for a Foreign Boss: A Practical Guide for Filipino Online Workers</a></h2>
+                <div class="c-card__foot">
+                  <p class="c-card__price">Free</p>
+                  <a class="btn btn--primary c-card__btn" href="course.html">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li data-category="virtual-assistance" data-reveal>
+            <!-- TODO: point both links at the VA course page once it exists -->
+            <article class="c-card c-card--link">
+              <div class="c-card__media"><img src="assets/img/course-va.png" alt="" width="600" height="339"></div>
+              <div class="c-card__body">
+                <h2 class="c-card__title"><a href="#">Fundamentals for General Virtual Assistants</a></h2>
+                <div class="c-card__foot">
+                  <p class="c-card__price">Free</p>
+                  <a class="btn btn--primary c-card__btn" href="#">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li data-category="ai" data-reveal>
+            <article class="c-card">
+              <div class="c-card__media course-cover" aria-hidden="true">
+                <span class="course-cover__chip">Coming soon</span>
+                <p class="course-cover__title">Practical AI<br>Implementation</p>
+                <p class="course-cover__sub">for the Real World</p>
+                <img class="course-cover__badge" src="assets/img/badge.png" alt="" width="36" height="36">
+              </div>
+              <div class="c-card__body">
+                <h2 class="c-card__title">Practical AI Implementation for the Real World</h2>
+                <div class="c-card__foot">
+                  <p class="c-card__price c-card__price--tba">Course Price — TBA</p>
+                  <button class="btn c-card__btn" type="button" disabled>Enroll Now</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────── Footer ───────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/logo.png" alt="OnlineJobs University" width="120" height="40" loading="lazy">
+          <p>Online work education for Filipino workers,<br>built by OnlineJobs.ph.</p>
+        </div>
+        <nav class="footer__cols" aria-label="Footer">
+          <div>
+            <p class="footer__head">Learn</p>
+            <a href="courses.html" aria-current="page">All courses</a>
+            <a href="index.html#instructors">Instructors</a>
+            <a href="index.html#how-it-works">How it works</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div>
+            <p class="footer__head">Teach</p>
+            <a href="#">Be an instructor</a>
+          </div>
+          <div>
+            <p class="footer__head">Company</p>
+            <a href="about.html">Our why</a>
+            <a href="#">Contact</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 OnlineJobs University</p>
+        <p class="footer__motto">Educate. Elevate. Earn.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+  <script src="js/courses.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>

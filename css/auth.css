@@ -1,0 +1,257 @@
+/* ==========================================================================
+   OnlineJobs University — Log in modal + Reset password page
+   Builds on styles.css (tokens, nav, buttons, footer).
+   Values come from the Paper designs "Login · 01–03" and "Reset · 01–04".
+   ========================================================================== */
+
+:root {
+  --danger: #D92D20;        /* invalid field border */
+  --danger-ink: #B42318;    /* error text + icon, 6.5:1 on white */
+  --gold-deep: #9C5D09;     /* envelope icon on the success page */
+}
+
+/* ---------- Shared type ---------- */
+.auth-title {
+  font: 800 30px/36px var(--font-display);
+  letter-spacing: -0.02em; color: var(--navy-900);
+}
+
+.text-link {
+  font: 600 14px/20px var(--font-body); color: var(--navy-700);
+  text-decoration: underline 1px; text-underline-offset: 3px;
+  transition: color .2s;
+}
+.text-link:hover { color: var(--navy-900); text-decoration-thickness: 2px; }
+
+/* ---------- Form fields ---------- */
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field__head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.field__label { font: 600 14px/20px var(--font-body); color: var(--ink-900); }
+
+/* The border lives on the wrapper so the password toggle can sit inside it.
+   Focus and error states thicken it to 1.5px with an inset shadow, so nothing shifts. */
+.field__control {
+  display: flex; align-items: center; height: 48px;
+  background: #fff; border: 1px solid var(--navy-400); border-radius: 8px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.field__control:focus-within {
+  border-color: var(--navy-800);
+  box-shadow: inset 0 0 0 .5px var(--navy-800), 0 0 0 4px rgb(26 39 89 / .12);
+}
+.field.is-invalid .field__control { border-color: var(--danger); box-shadow: inset 0 0 0 .5px var(--danger); }
+.field.is-invalid .field__control:focus-within { box-shadow: inset 0 0 0 .5px var(--danger), 0 0 0 4px rgb(217 45 32 / .12); }
+
+.field__input {
+  flex: 1 1 auto; min-width: 0; height: 100%; padding: 0 16px;
+  border: 0; border-radius: inherit; background: none; outline: none;
+  font: 400 16px/24px var(--font-body); color: var(--ink-900);
+}
+.field__input:focus-visible { outline: none; }
+.field__input::placeholder { color: var(--ink-450); opacity: 1; }
+.field__input[readonly] { cursor: default; }
+.field__input[type="password"]:not(:placeholder-shown) { letter-spacing: .12em; }
+
+.field__control--password { padding-right: 8px; }
+.field__control--password .field__input { padding-right: 8px; }
+.field__reveal {
+  display: grid; place-items: center; flex-shrink: 0;
+  width: 32px; height: 32px; border-radius: 6px; color: var(--ink-600);
+  transition: background-color .2s, color .2s;
+}
+.field__reveal:hover { background: var(--navy-100); color: var(--navy-800); }
+.field__reveal:focus-visible { outline-offset: 0; }
+.field__reveal svg { width: 20px; height: 20px; }
+.field__reveal[aria-pressed="false"] .icon-hide,
+.field__reveal[aria-pressed="true"] .icon-show { display: none; }
+
+.field__error {
+  display: flex; align-items: flex-start; gap: 8px;
+  font: 500 14px/20px var(--font-body); color: var(--danger-ink);
+}
+.field__error[hidden] { display: none; }
+.field__error svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; }
+.field__error a { font-weight: 700; text-decoration: underline 1px; text-underline-offset: 3px; }
+.field__error a:hover { text-decoration-thickness: 2px; }
+
+.check {
+  display: inline-flex; align-items: center; gap: 12px; align-self: flex-start;
+  font: 500 14px/20px var(--font-body); color: var(--ink-700); cursor: pointer;
+}
+.check input {
+  appearance: none; flex-shrink: 0; width: 20px; height: 20px; margin: 0;
+  border: 1px solid var(--navy-400); border-radius: 4px;
+  background: #fff center / 14px no-repeat; cursor: pointer;
+  transition: background-color .15s, border-color .15s;
+}
+.check input:hover { border-color: var(--navy-800); }
+.check input:checked {
+  border-color: var(--navy-800); background-color: var(--navy-800);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23fff' d='M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z'/%3E%3C/svg%3E");
+}
+.check input:focus-visible { outline-offset: 2px; border-radius: 4px; }
+
+/* ---------- Buttons ---------- */
+.btn--block { width: 100%; }
+.btn--primary.btn--block { box-shadow: 0 1px 3px rgb(12 19 48 / .2); }
+.btn--accent {
+  background: var(--gold); color: var(--navy-900);
+  box-shadow: 0 1px 3px rgb(7 11 30 / .3);
+}
+.btn--accent:hover { background: var(--gold-300); }
+.btn--on-dark {
+  border: 1px solid var(--navy-400); color: #fff;
+  font: 600 16px/24px var(--font-body);
+}
+.btn--on-dark:hover { background: var(--navy-700); border-color: var(--navy-300); }
+
+/* Waiting on a request: the label changes and a spinner shows */
+.btn.is-busy { background: var(--navy-700); cursor: progress; }
+.btn.is-busy:active { transform: none; }
+.btn__spinner { width: 20px; height: 20px; animation: auth-spin .8s linear infinite; }
+.btn:not(.is-busy) .btn__spinner { display: none; }
+@keyframes auth-spin { to { rotate: 360deg; } }
+@media (prefers-reduced-motion: reduce) { .btn__spinner { animation-duration: 2.4s; } }
+
+/* ==========================================================================
+   Log in modal (markup is built by js/auth.js)
+   ========================================================================== */
+.login {
+  width: min(960px, 100% - 32px); max-width: none; max-height: calc(100dvh - 32px);
+  margin: auto;   /* styles.css zeroes every margin; a modal dialog centres with auto */
+  padding: 0; border: 0; border-radius: 20px;
+  background: #fff; color: inherit;
+  overflow: auto; overscroll-behavior: contain;
+  box-shadow: 0 15px 35px rgb(12 19 48 / .25), 0 5px 15px rgb(12 19 48 / .12);
+}
+/* Navy ink at 70% over white is the design's #555A6E scrim */
+.login::backdrop { background: rgb(12 19 48 / .7); }
+.login[open] { animation: login-in .4s var(--ease-out); }
+.login[open]::backdrop { animation: login-fade .25s ease-out; }
+@keyframes login-in { from { opacity: 0; translate: 0 16px; scale: .98; } }
+@keyframes login-fade { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .login[open] { animation-name: login-fade; }
+}
+html:has(.login[open]) { overflow: hidden; }
+
+.login__inner { position: relative; display: flex; min-height: 100%; }
+
+.login__main {
+  flex: 0 0 560px; display: flex; flex-direction: column; gap: 32px;
+  padding: 48px 64px 56px;
+}
+.login__brand { display: flex; flex-direction: column; gap: 24px; }
+.login__brand img { width: 96px; height: 32px; object-fit: contain; object-position: left center; }
+.login__lede { margin-top: 8px; font: 400 16px/24px var(--font-body); color: var(--ink-600); }
+.login__form { display: flex; flex-direction: column; gap: 32px; }
+.login__group { display: flex; flex-direction: column; gap: 24px; }
+
+/* Used with .btn, so it shares the hover/press transitions and the pressed scale */
+.btn-oj {
+  display: flex; gap: 12px;
+  border: 1px solid var(--navy-400); background: #fff;
+  font: 600 16px/24px var(--font-body); color: var(--navy-900);
+}
+.btn-oj:hover { background: var(--navy-100); border-color: var(--navy-800); }
+.oj-mark {
+  display: grid; place-items: center; flex-shrink: 0; width: 20px; height: 20px;
+  border-radius: 4px; background: var(--navy-800);
+  font: 800 10px/12px var(--font-display); color: #fff;
+}
+
+.divider {
+  display: flex; align-items: center; gap: 16px;
+  font: 500 14px/20px var(--font-body); color: var(--ink-450); white-space: nowrap;
+}
+.divider::before, .divider::after { content: ""; flex: 1 1 0; height: 1px; background: var(--line-soft); }
+
+/* Register panel */
+.login__aside {
+  flex: 1 1 0; min-width: 0;
+  display: flex; flex-direction: column; justify-content: center; gap: 32px;
+  padding: 88px 48px 48px;
+  background: var(--navy-800); color: #fff;
+}
+.login__aside-copy, .login__aside-actions { display: flex; flex-direction: column; gap: 12px; }
+.login__overline {
+  font: 700 12px/16px var(--font-body); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--gold-300);
+}
+.login__aside .auth-title { color: #fff; }
+.login__aside-copy p:last-child { font: 400 16px/26px var(--font-body); color: var(--navy-300); }
+.login__aside :focus-visible { outline-color: var(--gold); }
+
+.login__close {
+  position: absolute; top: 20px; right: 20px; z-index: 1;
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 8px;
+  background: var(--navy-700); color: var(--navy-200);
+  transition: background-color .2s, color .2s;
+}
+.login__close:hover { background: var(--navy-600); color: #fff; }
+.login__close:focus-visible { outline-color: var(--gold); }
+.login__close svg { width: 20px; height: 20px; }
+
+/* Stacked: register panel moves under the form, close button sits on white */
+@media (max-width: 920px) {
+  .login { width: min(560px, 100% - 32px); }
+  .login__inner { flex-direction: column; }
+  .login__main { flex: none; padding: 40px 32px; }
+  .login__aside { flex: none; justify-content: flex-start; padding: 40px 32px; }
+  .login__close { top: 16px; right: 16px; background: var(--navy-100); color: var(--navy-800); }
+  .login__close:hover { background: var(--navy-200); color: var(--navy-900); }
+  .login__close:focus-visible { outline-color: var(--navy-800); }
+}
+@media (max-width: 480px) {
+  .login { width: 100%; height: 100dvh; max-height: 100dvh; border-radius: 0; }
+  .login__main { padding: 32px 20px 40px; }
+  .login__aside { padding: 32px 20px 40px; }
+  .divider { white-space: normal; text-align: center; }
+}
+
+/* ==========================================================================
+   Reset password page
+   ========================================================================== */
+.auth-page { padding: calc(var(--nav-h) + 80px) 0 120px; }
+.auth-col {
+  width: min(440px, 100% - 2 * var(--gutter)); margin-inline: auto;
+  display: flex; flex-direction: column; gap: 32px;
+}
+.auth-col[hidden] { display: none; }
+.auth-col:focus { outline: none; }
+
+.auth-intro { display: flex; flex-direction: column; align-items: center; gap: 24px; text-align: center; }
+.auth-intro__text { display: flex; flex-direction: column; gap: 8px; }
+.auth-intro__text h1:focus { outline: none; }
+.auth-intro__text p { font: 400 16px/26px var(--font-body); color: var(--ink-600); }
+.auth-intro__text strong { font-weight: 600; color: var(--ink-900); overflow-wrap: anywhere; }
+
+.auth-icon {
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 16px;
+  background: var(--navy-100); color: var(--navy-800);
+}
+.auth-icon svg { width: 28px; height: 28px; }
+.auth-icon--gold { border: 1px solid var(--gold-200); background: var(--gold-50); color: var(--gold-deep); }
+
+.auth-form { display: flex; flex-direction: column; gap: 24px; }
+
+.auth-help {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding-top: 24px; border-top: 1px solid var(--line-soft); text-align: center;
+}
+.auth-help__title { font: 600 14px/20px var(--font-body); color: var(--ink-900); }
+.auth-help__body { font: 400 14px/22px var(--font-body); color: var(--ink-600); }
+.auth-help button { padding: 0; }
+.auth-help .text-link { line-height: 22px; }
+/* Resend: muted countdown first, then a link once it can be used */
+.auth-help__resend {
+  font: 600 14px/22px var(--font-body); color: var(--navy-700);
+  text-decoration: underline 1px; text-underline-offset: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.auth-help__resend:hover { color: var(--navy-900); text-decoration-thickness: 2px; }
+.auth-help__resend[aria-disabled="true"] { color: var(--ink-450); text-decoration: none; cursor: default; }
+
+@media (max-width: 860px) {
+  .auth-page { padding: calc(var(--nav-h) + 48px) 0 88px; }
+}

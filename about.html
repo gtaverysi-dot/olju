@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About OnlineJobs University</title>
+  <meta name="description" content="OnlineJobs University is the education initiative of OnlineJobs.ph. Educate. Elevate. Earn.">
+  <meta name="theme-color" content="#1A2759">
+  <link rel="icon" type="image/png" href="assets/img/badge.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <!-- Icons: Phosphor (@phosphor-icons/core 2.1.1) for UI glyphs, OLJU icon set v1 for illustrations -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow-right" viewBox="0 0 256 256"><path fill="currentColor" d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 256 256"><path fill="currentColor" d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 256 256"><path fill="currentColor" d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+
+    <symbol id="ic-global" viewBox="0 0 64 64">
+      <circle cx="29" cy="35" r="22" fill="#DDE2EF"/>
+      <ellipse cx="29" cy="35" rx="9" ry="22" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+      <path d="M7 35H51M10.5 24H47.5M10.5 46H47.5" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+      <path d="M18 44C20 32 30 24 42 22" fill="none" stroke="#1A2759" stroke-width="3.2" stroke-linecap="round"/>
+      <circle cx="18" cy="44" r="5" fill="#1A2759"/>
+      <path d="M48 3C42.5 3 38 7.3 38 12.8C38 19.8 48 28 48 28C48 28 58 19.8 58 12.8C58 7.3 53.5 3 48 3Z" fill="#1A2759" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="48" cy="12.6" r="3.6" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="ic-instructors" viewBox="0 0 64 64">
+      <rect x="22" y="7" width="37" height="28" rx="5" fill="#DDE2EF"/>
+      <rect x="28" y="14" width="17" height="3.5" rx="1.75" fill="#B5BFDB"/>
+      <rect x="28" y="21.5" width="24" height="3.5" rx="1.75" fill="#B5BFDB"/>
+      <path d="M26 41L39 29" fill="none" stroke="#8793C2" stroke-width="2.8" stroke-linecap="round"/>
+      <circle cx="16" cy="27" r="7" fill="#1A2759"/>
+      <path d="M3 57V48C3 41.4 8.8 37 16 37C23.2 37 29 41.4 29 48V57Z" fill="#1A2759"/>
+    </symbol>
+    <symbol id="ic-remote" viewBox="0 0 64 64">
+      <rect x="11" y="10" width="42" height="31" rx="5" fill="#DDE2EF"/>
+      <rect x="17" y="16" width="15" height="12" rx="2.5" fill="#1A2759"/>
+      <circle cx="24.5" cy="21" r="2.6" fill="#DDE2EF"/>
+      <path d="M19.5 28C19.5 25.5 21.8 24 24.5 24C27.2 24 29.5 25.5 29.5 28Z" fill="#DDE2EF"/>
+      <rect x="35" y="17" width="12" height="3" rx="1.5" fill="#B5BFDB"/>
+      <rect x="35" y="23" width="8" height="3" rx="1.5" fill="#B5BFDB"/>
+      <rect x="17" y="32" width="30" height="3" rx="1.5" fill="#B5BFDB"/>
+      <path d="M5 44H59V46.5C59 49.5 56.5 52 53.5 52H10.5C7.5 52 5 49.5 5 46.5Z" fill="#1A2759"/>
+      <rect x="27" y="44" width="10" height="2.6" rx="1.3" fill="#8793C2"/>
+    </symbol>
+    <symbol id="ic-growth" viewBox="0 0 64 64">
+      <rect x="8" y="53" width="48" height="3" rx="1.5" fill="#B5BFDB"/>
+      <rect x="11" y="38" width="10" height="15" rx="2.5" fill="#DDE2EF"/>
+      <rect x="25" y="30" width="10" height="23" rx="2.5" fill="#DDE2EF"/>
+      <rect x="39" y="22" width="10" height="31" rx="2.5" fill="#1A2759"/>
+      <path d="M9 30L20 20.5L28 25L45 9" fill="none" stroke="#1A2759" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M37 8.5H45.5V17" fill="none" stroke="#1A2759" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-bigger-picture" viewBox="0 0 64 64">
+      <rect x="5" y="14" width="50" height="44" rx="6" fill="#DDE2EF"/>
+      <circle cx="29.5" cy="42.5" r="1.8" fill="#8793C2"/>
+      <circle cx="34" cy="40.8" r="1.8" fill="#8793C2"/>
+      <circle cx="38.5" cy="39.1" r="1.8" fill="#8793C2"/>
+      <ellipse cx="45.5" cy="37" rx="6" ry="2.2" fill="#8793C2"/>
+      <rect x="44" y="6" width="3" height="31" rx="1.5" fill="#1A2759"/>
+      <path d="M47 7H59L55.5 12.5L59 18H47Z" fill="#1A2759"/>
+      <rect x="9" y="39" width="17" height="13" rx="3" fill="#1A2759"/>
+      <path d="M13.2 45.6L16.1 48.4L21.6 43" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-communicate" viewBox="0 0 64 64">
+      <path d="M11 32L8.5 42L20 34Z" fill="#DDE2EF"/>
+      <rect x="4" y="6" width="38" height="29" rx="7" fill="#DDE2EF"/>
+      <path d="M17.5 16.8C17.5 13.8 20 11.8 23 11.8C26 11.8 28.5 13.7 28.5 16.5C28.5 19.9 23 20.5 23 24.1" fill="none" stroke="#1A2759" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="23" cy="29" r="2.1" fill="#1A2759"/>
+      <rect x="22" y="25" width="40" height="29" rx="8.5" fill="#FFFFFF"/>
+      <path d="M49 50L54 59.5L41 51Z" fill="#1A2759"/>
+      <rect x="24" y="27" width="36" height="25" rx="7" fill="#1A2759"/>
+      <path d="M42 30.5C38.7 30.5 36.2 33 36.2 36.1C36.2 38.1 37.2 39.5 38.4 40.6C38.9 41.1 39.2 41.7 39.2 42.3V42.7H44.8V42.3C44.8 41.7 45.1 41.1 45.6 40.6C46.8 39.5 47.8 38.1 47.8 36.1C47.8 33 45.3 30.5 42 30.5Z" fill="#DDE2EF"/>
+      <path d="M38.6 35.6C38.6 34 39.7 32.8 41.2 32.6" fill="none" stroke="#1A2759" stroke-width="1.6" stroke-linecap="round"/>
+      <rect x="39.4" y="44.2" width="5.2" height="2.6" rx="1.3" fill="#8793C2"/>
+      <path d="M31.5 33L29.8 31.3M52.5 33L54.2 31.3M30.5 38.5H28.2M53.5 38.5H55.8" fill="none" stroke="#8793C2" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-trust" viewBox="0 0 64 64">
+      <path d="M24 10L21.5 6.5M31 8.5V4M38 10L40.5 6.5" fill="none" stroke="#8793C2" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="19" cy="22" r="8.5" fill="#1A2759"/>
+      <circle cx="19" cy="22" r="3.2" fill="#FFFFFF"/>
+      <rect x="25" y="19.6" width="27" height="4.8" rx="2.4" fill="#1A2759"/>
+      <rect x="40.5" y="23" width="4.4" height="7" rx="1.6" fill="#1A2759"/>
+      <rect x="47" y="23" width="4.4" height="5" rx="1.6" fill="#1A2759"/>
+      <rect x="3" y="38" width="8" height="21" rx="2.5" fill="#8793C2"/>
+      <path d="M11 40.5H21C23.2 40.5 24.6 39.2 26.4 37.6L29.6 34.8C31.2 33.4 33.6 33.6 34.9 35.2C36.1 36.7 35.9 38.9 34.5 40.2L32.4 42.1H50C52.8 42.1 55 44.3 55 47.1C55 49.9 52.8 52.1 50 52.1H45.2C43.6 55.2 40.4 57.4 36.6 57.4H11Z" fill="#DDE2EF"/>
+      <path d="M33 47.1H49" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ───────────── Nav ───────────── -->
+  <header class="nav" data-nav>
+    <nav class="nav__bar" aria-label="Primary">
+      <a class="nav__logo" href="index.html" aria-label="OnlineJobs University home">
+        <img src="assets/img/logo.png" alt="" width="96" height="32">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="index.html#instructors">Instructors</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="nav__signin" href="#login" data-login-open>Sign in</a>
+        <a class="btn btn--primary btn--sm" href="#">Register</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Open menu" data-nav-toggle>
+          <svg class="icon" aria-hidden="true"><use href="#i-list"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__sheet" id="nav-sheet" data-nav-sheet hidden>
+      <a href="index.html">Home</a>
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="courses.html">Courses</a>
+      <a href="index.html#instructors">Instructors</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#login" data-login-open>Sign in</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── Hero ───────────── -->
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="container about-hero__grid">
+        <div class="about-hero__copy">
+          <h1 class="about-hero__title reveal" id="about-title">About <span class="nowrap">OnlineJobs University</span></h1>
+          <p class="about-hero__sub reveal">OnlineJobs University is the education initiative of OnlineJobs.ph.</p>
+        </div>
+        <div class="about-hero__visual reveal" aria-hidden="true">
+          <div class="about-hero__land"></div>
+          <span class="about-hero__pin" style="--x:26.23%;--y:27.12%;--s:14.75%;--bs:227.27% 127.84%;--bp:4.69% 11.66%;--d:200ms;background-image:url(assets/img/map-1.jpg)"></span>
+          <span class="about-hero__pin" style="--x:53.69%;--y:14.69%;--s:12.30%;--bs:177.78% 100%;--bp:76.57% 0%;--d:280ms;background-image:url(assets/img/map-2.jpg)"></span>
+          <span class="about-hero__pin" style="--x:72.95%;--y:42.37%;--s:18.03%;--bs:304.66% 171.37%;--bp:85.3% 15.18%;--d:360ms;background-image:url(assets/img/map-3.jpg)"></span>
+          <span class="about-hero__pin" style="--x:46.31%;--y:56.50%;--s:16.39%;--bs:258.06% 145.16%;--bp:98.82% 1.46%;--d:440ms;background-image:url(assets/img/map-6.jpg)"></span>
+          <span class="about-hero__pin" style="--x:15.57%;--y:64.41%;--s:10.66%;--bs:348.38% 196.09%;--bp:88.48% 5.32%;--d:520ms;background-image:url(assets/img/map-5.jpg)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Who we are ───────────── -->
+    <section class="who" aria-labelledby="who-title">
+      <div class="container">
+        <h2 class="about-h2" id="who-title">Who We Are</h2>
+        <div class="who__cards">
+          <article class="a-card" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-global"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title">OnlineJobs.ph</h3>
+              <p class="a-card__body">OnlineJobs.ph helps Filipino workers connect directly with employers around the world.</p>
+            </div>
+          </article>
+          <article class="a-card" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-instructors"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title a-card__title--navy">OnlineJobs University</h3>
+              <p class="a-card__body">OnlineJobs University builds on that experience, turning lessons learned from years of online work into education for Filipino workers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Our story ───────────── -->
+    <section class="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__intro">
+          <h2 class="story__title" id="story-title">Our Story Starts <span class="nowrap">With OnlineJobs.ph</span></h2>
+          <p class="story__lede">The story behind OnlineJobs.ph began before its launch in 2009.</p>
+          <p class="story__year"><strong>2009</strong><span>OnlineJobs.ph <small>launches</small></span></p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__stage" data-reveal>
+            <span class="timeline__dot" aria-hidden="true">1</span>
+            <article class="timeline__card">
+              <h3 class="timeline__title">Where It All Began</h3>
+              <p>John Jonas, co-founder of OnlineJobs.ph, was running his own online business when he began hiring Filipino workers to take on tasks he couldn't manage alone.</p>
+            </article>
+          </li>
+          <li class="timeline__stage" data-reveal>
+            <span class="timeline__dot" aria-hidden="true">2</span>
+            <article class="timeline__card">
+              <h3 class="timeline__title">When His Team Stepped Up</h3>
+              <p>Then a serious family situation forced John to step away from much of the day-to-day work. He trusted his Filipino team to keep things moving while he focused on his family.</p>
+              <p>When he returned, he found that they had done far more than follow instructions. They had kept the business running, solved problems, and taken responsibility without him directing every decision.</p>
+            </article>
+          </li>
+          <li class="timeline__stage timeline__stage--key" data-reveal>
+            <span class="timeline__dot" aria-hidden="true">3</span>
+            <article class="timeline__card">
+              <h3 class="timeline__title">What John Learned</h3>
+              <p>That experience changed how John saw his team and what Filipino workers could accomplish.</p>
+              <blockquote class="timeline__quote"><p>He realized they were capable of far more when they were trusted, taught, and given room to think.</p></blockquote>
+              <p>That belief helped shape OnlineJobs.ph, which launched in 2009 to help employers hire Filipino workers directly and Filipino workers find long-term online opportunities.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── Lessons ───────────── -->
+    <section class="lessons" aria-labelledby="lessons-title">
+      <div class="container">
+        <header class="lessons__head">
+          <h2 class="about-h2" id="lessons-title">What Years of Online Work Taught Us</h2>
+          <p class="lessons__lead">Hiring someone is only the beginning of a working relationship.</p>
+          <p class="lessons__lede">Through years of working with our own Filipino team, we’ve seen what helps people grow after they’re hired.</p>
+        </header>
+
+        <div class="lessons__cards">
+          <article class="a-card a-card--lesson" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-bigger-picture"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title a-card__title--sm">Understand the Bigger Picture</h3>
+              <p class="a-card__body a-card__body--sm">Workers need to understand what their employer is trying to accomplish, not just the tasks they’ve been assigned.</p>
+            </div>
+          </article>
+          <article class="a-card a-card--lesson" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-communicate"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title a-card__title--sm">Communicate and Solve Problems</h3>
+              <p class="a-card__body a-card__body--sm">Asking questions at the right time, communicating clearly, and solving problems as they arise all make a difference in day-to-day work.</p>
+            </div>
+          </article>
+          <article class="a-card a-card--lesson" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-trust"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title a-card__title--sm">Build Trust Through Responsibility</h3>
+              <p class="a-card__body a-card__body--sm">Good judgment and a willingness to take responsibility build trust. These qualities grow through experience, guidance, and opportunities to take on greater responsibility.</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="takeaway" data-reveal>
+          <img src="assets/img/badge.png" alt="" width="72" height="72" loading="lazy">
+          <div>
+            <p class="takeaway__main">Knowing how to use a tool or complete a task is only part of what makes someone effective at online work.</p>
+            <p class="takeaway__sub">These lessons helped shape the thinking behind OnlineJobs University.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────────── Next chapter ───────────── -->
+    <section class="chapter" aria-labelledby="chapter-title" data-horizon>
+      <canvas class="chapter__canvas" data-horizon-canvas aria-hidden="true"></canvas>
+      <div class="chapter__horizon" aria-hidden="true"></div>
+      <div class="container chapter__inner">
+        <header class="chapter__head">
+          <h2 class="chapter__title" id="chapter-title">OnlineJobs University Is the Next Chapter</h2>
+          <p class="chapter__sub">OnlineJobs University carries the OnlineJobs.ph mission forward through education.</p>
+        </header>
+
+        <hr class="chapter__rule">
+
+        <div class="chapter__mission">
+          <p class="chapter__motto">Educate. <span>Elevate.</span> Earn.</p>
+          <p class="chapter__goal">Our goal is to help Filipino workers learn from professionals with years of firsthand experience.</p>
+          <p class="chapter__goal chapter__goal--muted">Through that education, we want them to build the confidence and judgment to handle challenges, take on greater responsibility, and grow in their online careers.</p>
+        </div>
+
+        <div class="pair">
+          <article class="pair__card pair__card--dark" data-reveal>
+            <span class="icon-tile icon-tile--flat"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-remote"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title">OnlineJobs.ph</h3>
+              <p class="a-card__body">Built to help Filipino workers find online opportunities.</p>
+            </div>
+          </article>
+          <span class="pair__link" aria-hidden="true"><svg class="icon"><use href="#i-arrow-right"/></svg></span>
+          <article class="pair__card pair__card--light" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-growth"/></svg></span>
+            <div class="a-card__text">
+              <h3 class="a-card__title a-card__title--navy">OnlineJobs University</h3>
+              <p class="a-card__body">Built to help them become better prepared to make the most of those opportunities.</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="btn btn--gold btn--lg btn--lift" href="courses.html">
+          Explore Courses
+          <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────── Footer ───────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/logo.png" alt="OnlineJobs University" width="120" height="40" loading="lazy">
+          <p>Online work education for Filipino workers,<br>built by OnlineJobs.ph.</p>
+        </div>
+        <nav class="footer__cols" aria-label="Footer">
+          <div>
+            <p class="footer__head">Learn</p>
+            <a href="courses.html">All courses</a>
+            <a href="index.html#instructors">Instructors</a>
+            <a href="index.html#how-it-works">How it works</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div>
+            <p class="footer__head">Teach</p>
+            <a href="#">Be an instructor</a>
+          </div>
+          <div>
+            <p class="footer__head">Company</p>
+            <a href="about.html" aria-current="page">Our why</a>
+            <a href="#">Contact</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 OnlineJobs University</p>
+        <p class="footer__motto">Educate. Elevate. Earn.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+  <script src="js/horizon.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>

@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/img/hero.jpg">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -42,7 +43,7 @@
         <li><a href="faq.html">FAQ</a></li>
       </ul>
       <div class="nav__actions">
-        <a class="nav__signin" href="#">Sign in</a>
+        <a class="nav__signin" href="#login" data-login-open>Sign in</a>
         <a class="btn btn--primary btn--sm" href="#">Register</a>
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Open menu" data-nav-toggle>
           <svg class="icon" aria-hidden="true"><use href="#i-list"/></svg>
@@ -55,7 +56,7 @@
       <a href="#courses">Courses</a>
       <a href="#instructors">Instructors</a>
       <a href="faq.html">FAQ</a>
-      <a href="#">Sign in</a>
+      <a href="#login" data-login-open>Sign in</a>
     </div>
   </header>
 
@@ -71,7 +72,7 @@
               Start learning today
               <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
             </a>
-            <a class="btn btn--outline btn--lg" href="#courses">Explore All Courses</a>
+            <a class="btn btn--outline btn--lg" href="courses.html">Explore All Courses</a>
           </div>
           <div class="hero__proof reveal">
             <div class="avatar-stack" aria-hidden="true">
@@ -315,14 +316,14 @@
             <h2 class="h-display" id="courses-title">Featured Courses</h2>
             <p class="section-head__lede">Explore practical courses designed to help you build relevant skills, understand what employers expect, and become more confident in your ability to do better online work.</p>
           </div>
-          <a class="btn btn--outline btn--lg" href="#">
+          <a class="btn btn--outline btn--lg" href="courses.html">
             Browse all 5 courses
             <svg class="icon icon--16 btn__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
           </a>
         </div>
         <ul class="course-grid">
           <li>
-            <a class="course-card" href="#">
+            <a class="course-card" href="course.html">
               <div class="course-card__media"><img src="assets/img/course-foreign-boss.png" alt="" width="600" height="338" loading="lazy"></div>
               <div class="course-card__body">
                 <h3 class="course-card__title">How to Work for a Foreign Boss: A Practical Guide for Filipino Online Workers</h3>
@@ -454,7 +455,7 @@
         <nav class="footer__cols" aria-label="Footer">
           <div>
             <p class="footer__head">Learn</p>
-            <a href="#courses">All courses</a>
+            <a href="courses.html">All courses</a>
             <a href="#instructors">Instructors</a>
             <a href="#how-it-works">How it works</a>
             <a href="faq.html">FAQ</a>
@@ -465,7 +466,7 @@
           </div>
           <div>
             <p class="footer__head">Company</p>
-            <a href="#">Our why</a>
+            <a href="about.html">Our why</a>
             <a href="#">Contact</a>
             <a href="#">Legal</a>
             <a href="#">Privacy policy</a>
@@ -482,5 +483,6 @@
 
   <script src="js/orbit.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/auth.js" defer></script>
 </body>
 </html>
